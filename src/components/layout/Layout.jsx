@@ -16,10 +16,7 @@ export const Layout = () => {
     const { workspace, userRole, setUserRole } = useStorage();
     const location = useLocation();
 
-    if (!workspace.activated && location.pathname !== '/onboarding') {
-        // Redirect logic handled in App.jsx usually, but here for safety visual
-        return <div className="p-10 text-center">Please complete onboarding first.</div>;
-    }
+
 
     const navItems = [
         { to: '/', icon: LayoutDashboard, label: 'Dashboard' },

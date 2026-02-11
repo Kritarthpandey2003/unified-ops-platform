@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useStorage } from '../context/StorageContext';
 import { Button } from '../components/ui/Button';
-import { User, Send, Clock, CheckDouble } from 'lucide-react';
+import { User, Send, Clock, CheckCheck } from 'lucide-react';
 import { formatDateTime, classNames } from '../lib/utils';
 
 export const Inbox = () => {

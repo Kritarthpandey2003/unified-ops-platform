@@ -1,0 +1,170 @@
+:root {
+    /* --- Colors (HSL) --- */
+
+    /* Primary Brand (Deep Slate / Trust) */
+    --color-primary-h: 222;
+    --color-primary-s: 47%;
+    --color-primary-l: 11%;
+    /* #0f172a */
+    --color-primary: hsl(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l));
+
+    /* Accent (Action / Vibrant Blue) */
+    --color-accent-h: 217;
+    --color-accent-s: 91%;
+    --color-accent-l: 60%;
+    /* #3b82f6 */
+    --color-accent: hsl(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l));
+    --color-accent-hover: hsl(var(--color-accent-h), var(--color-accent-s), 50%);
+
+    /* Surfaces */
+    --color-bg-base: hsl(210, 40%, 98%);
+    /* App Background (Slightly Cool Gray) */
+    --color-bg-card: hsl(0, 0%, 100%);
+    /* Card Background (White) */
+    --color-bg-subtle: hsl(210, 40%, 96.1%);
+    /* Sidebar / Header */
+
+    /* Text */
+    --color-text-primary: hsl(222, 47%, 11%);
+    /* Near Black */
+    --color-text-secondary: hsl(215, 16%, 47%);
+    /* Muted Slate */
+    --color-text-description: hsl(215, 16%, 60%);
+    /* Very Muted */
+    --color-text-inverse: hsl(0, 0%, 100%);
+    /* White Text */
+
+    /* Semantic / Alerts */
+    --color-success: hsl(142, 71%, 45%);
+    /* Emerald */
+    --color-success-bg: hsl(142, 71%, 95%);
+
+    --color-warning: hsl(38, 92%, 50%);
+    /* Amber */
+    --color-warning-bg: hsl(38, 92%, 95%);
+
+    --color-danger: hsl(0, 84%, 60%);
+    /* Rose */
+    --color-danger-bg: hsl(0, 84%, 95%);
+
+    /* Borders */
+    --color-border: hsl(214, 32%, 91%);
+    --color-border-hover: hsl(214, 32%, 80%);
+
+    /* --- Spacing --- */
+    --space-xs: 0.25rem;
+    /* 4px */
+    --space-sm: 0.5rem;
+    /* 8px */
+    --space-md: 1rem;
+    /* 16px */
+    --space-lg: 1.5rem;
+    /* 24px */
+    --space-xl: 2rem;
+    /* 32px */
+    --space-2xl: 3rem;
+    /* 48px */
+
+    /* --- Radii --- */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    /* 8px - Standard */
+    --radius-lg: 0.75rem;
+    /* 12px - Cards */
+    --radius-full: 9999px;
+
+    /* --- Shadows (Premium Feel) --- */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    /* --- Z-Index --- */
+    --z-overlay: 50;
+    --z-modal: 100;
+    --z-toast: 200;
+}
+
+/* Utility Classes for fast prototyping */
+.text-primary {
+    color: var(--color-text-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.bg-card {
+    background-color: var(--color-bg-card);
+}
+
+.bg-base {
+    background-color: var(--color-bg-base);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-md {
+    gap: var(--space-md);
+}
+
+.gap-sm {
+    gap: var(--space-sm);
+}
+
+.p-md {
+    padding: var(--space-md);
+}
+
+.p-lg {
+    padding: var(--space-lg);
+}
+
+.rounded-md {
+    border-radius: var(--radius-md);
+}
+
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+
+.border {
+    border: 1px solid var(--color-border);
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
